@@ -7,8 +7,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Alesha R</NavbarBrand>
-        <NavbarText> hi</NavbarText>
+        <NavbarBrand href="/">Alesha</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -33,7 +33,7 @@ const NavBar = (props) => {
               <NavLink href="Technologies">Technologies</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="Contact">Contact</NavLink>
+              <Link NavLink to="Contact">Contact</Link>
             </NavItem>
             <NavItem>
               <NavLink href="Blogs">Blogs</NavLink>

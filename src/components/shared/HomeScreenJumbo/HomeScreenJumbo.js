@@ -1,6 +1,5 @@
 import React from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
-
 import './HomeScreenJumbo.scss';
 
 const HomeScreenJumbo = (props) => {
@@ -13,6 +12,7 @@ const HomeScreenJumbo = (props) => {
           <Button className="coverbtn" outline color="secondary" size="md">GitHub</Button>
           <Button className="coverbtn" outline color="secondary" size="md">LinkedIn</Button>
           <Button className="coverbtn" outline color="secondary" size="md">Email</Button>
+          <Button className="coverbtn" outline color="secondary" size="md">Blog</Button>
         </Container>
       </Jumbotron>
     </div>
