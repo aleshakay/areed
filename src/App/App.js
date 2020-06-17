@@ -11,6 +11,7 @@ import Auth from '../components/pages/Auth/Auth';
 import NavBar from '../components/shared/NavBar/NavBar';
 import Home from '../components/pages/Home/Home';
 import Contact from '../components/pages/Contact/Contact';
+import About from '../components/pages/About/About';
 import './App.scss';
 
 
@@ -41,6 +42,7 @@ class App extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/Contact" exact component={Contact} />
+              <Route path="/About" exact component={About} />
             </Switch>
           </Router>
       </div>
