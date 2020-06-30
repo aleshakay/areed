@@ -1,0 +1,65 @@
+{
+  "project1": {
+    "title": "Sore Throat Band",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "A Band Website, I contributed to the design concept and the merchandise page.",
+    "technologiesUsed": "HTML, Javascript, Version Control with Github",
+    "available": true,
+    "url": " https://rockbandz.firebaseapp.com",
+    "githubUrl": "https://github.com/nss-evening-cohort-10/foundations-group-project-sore-throat"
+  },
+  "project2": {
+    "title": "The Sandwich Maker",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "Use this application to select sandwich toppings and get a final cost for your sandwich creation.",
+    "technologiesUsed": "HTML, CSS, Vanilla Javascript, Version Control with Github",
+    "available": true,
+    "url": "https://sandwichmaker-ec5cf.firebaseapp.com",
+    "githubUrl": "https://github.com/aleshakay/sandwich-maker"
+  },
+  "project3": {
+    "title": "The Sorting Hat",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "The Sorting Hat has been dividing and sorting students into Hogwart houses.",
+    "technologiesUsed": "HTML, CSS, Vanilla Javascript, Github",
+    "available": true,
+    "url": "https://sortinghats.firebaseapp.com",
+    "githubUrl": "https://github.com/aleshakay/sortingHat"
+  },
+  "project4": {
+    "title": "Shark Attack",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "Application to Randomly remove students a tank to a graveyard using in React.js",
+    "technologiesUsed": "HTML, SASS, React, CRUD, Github",
+    "available": true,
+    "url": "https://shark-attack-3bcda.firebaseapp.com",
+    "githubUrl": "https://github.com/aleshakay/shark-attack"
+  },
+  "project5": {
+    "title": "FreeLancer",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "Application use CRUD to track events for a Renaissance fair",
+    "technologiesUsed": "HTML, Javascript, CRUD, Github",
+    "available": true,
+    "url": "https://freelancer-redux.firebaseapp.com/",
+    "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-renaissance-fair"
+  },
+  "project6": {
+    "title": "Tennis Roster",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "This application is a roster of a Tennis team. It list player and the match in which they play.",
+    "technologiesUsed": "HTML, React, CRUD, Version Control with Github, Firebase",
+    "available": true,
+    "url": "https://sports-roster-59415.firebaseapp.com",
+    "githubUrl": "https://github.com/aleshakay/sports-roster"
+  },
+  "project7": {
+    "title": "Magical Memories",
+    "screenshot": "https://cdn.shopify.com/s/files/1/0533/2089/files/free-stock-photography-pixabay.jpg?v=1512762557",
+    "description": "This application is a Photographer's Appointment Scheduler, and a Portfolio Viewer",
+    "technologiesUsed": "JSX, React, CRUD, Version Control with Github, Firebase, Router, React BootStrap",
+    "available": true,
+    "url": "https://magicalmemories-afe4d.firebaseapp.com/",
+    "githubUrl": "https://github.com/aleshakay/Magical-Memories/projects/"
+  }
+}

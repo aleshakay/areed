@@ -6,10 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import './NavBar.scss';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,25 +17,25 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className="navBarRow" color="light" light expand="md">
         <NavbarBrand href="/">Alesha</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto" myNavbar>
             <NavItem>
-              <NavLink href="/About/">About</NavLink>
+              <Link className="pageLink" NavLink to="About">About</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="Projects">Projects</NavLink>
+              <Link className="pageLink" NavLink to="Porfolio">Porfolio</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="Technologies">Technologies</NavLink>
+              <Link className="pageLink" NavLink to="Technologies">Technologies</Link>
             </NavItem>
             <NavItem>
-              <Link NavLink to="Contact">Contact</Link>
+              <Link className="pageLink" NavLink to="Contact">Contact</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="Blogs">Blogs</NavLink>
+              <Link className="pageLink" NavLink to="Blog">Blog</Link>
             </NavItem>
           </Nav>
         </Collapse>

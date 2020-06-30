@@ -1,0 +1,44 @@
+{
+  "technology1": {
+    "name": "Javascript"
+  },
+  "technology2": {
+    "name": "Github"
+  },
+  "technology3": {
+    "name": "HTML"
+  },
+  "technology4": {
+    "name": "jQuery"
+  },
+  "technology5": {
+    "name": "SASS"
+  },
+  "technology6": {
+    "name": "JSON"
+  },
+  "technology7": {
+    "name": "Cascading Style Sheet"
+  },
+  "technology8": {
+    "name": "Linux"
+  },
+  "technology9": {
+    "name": "Elastic"
+  },
+  "technology10": {
+    "name": "Reactjs"
+  },
+  "technology11": {
+    "name": ".Net"
+  },
+  "technology12": {
+    "name": "SQL"
+  },
+  "technology13": {
+    "name": "C#"
+  }
+}
+  
+
+    

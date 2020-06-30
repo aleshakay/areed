@@ -3,24 +3,35 @@ import {
   BrowserRouter as Router, Route, Redirect, Switch,
 }
   from 'react-router-dom';
-import firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConnection from '../helpers/data/connection';
 
-import Auth from '../components/pages/Auth/Auth';
 import NavBar from '../components/shared/NavBar/NavBar';
 import Home from '../components/pages/Home/Home';
 import Contact from '../components/pages/Contact/Contact';
 import About from '../components/pages/About/About';
+import Technologies from '../components/pages/Technologies/Technologies';
+import Porfolio from '../components/pages/Porfolio/Porfolio';
 import './App.scss';
 
 
 firebaseConnection();
 
+
+const PublicRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = (props) => (authed === false ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/', state: { from: props.location } }} />);
+  return <Route {...rest} render={(props) => routeChecker(props)} />;
+};
+
+// const PrivateRoute = ({ component: Component, authed, ...rest }) => {
+//   const routeChecker = (props) => (authed === true ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/auth', state: { from: props.location } }} />);
+//   return <Route {...rest} render={(props) => routeChecker(props)} />;
+// };
+
+
 class App extends React.Component {
   state = {
     authed: false,
-    userObj: '',
   };
 
   // componentDidMount() {
@@ -33,16 +44,22 @@ class App extends React.Component {
   //   });
   // }
 
+  // componentWillUnmount() {
+  //   this.removeListener();
+  // }
+
   render() {
-    // const { authed, userObj } = this.state;
+    const { authed } = this.state;
     return (
       <div className="App">
         <Router>
-            <NavBar />
+            <NavBar auth={authed}/>
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/Contact" exact component={Contact} />
-              <Route path="/About" exact component={About} />
+              <PublicRoute path="/" exact component={Home} authed={authed}/>
+              <PublicRoute path="/Contact" exact component={Contact} authed={authed}/>
+              <PublicRoute path="/About" exact component={About} authed={authed}/>
+              <PublicRoute path="/Technologies" exact component={Technologies} authed={authed}/>
+              <PublicRoute path="/Porfolio" exact component={Porfolio} authed={authed} />
             </Switch>
           </Router>
       </div>
