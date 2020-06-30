@@ -1,0 +1,12 @@
+.ProjectImage{
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  align-self: center;
+}
+
+.ProjectDescription{
+  width: min-content;
+  justify-content: center;
+  min-width: -webkit-fill-available;
+}

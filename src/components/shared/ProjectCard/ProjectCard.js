@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody, CardLink, Col,
+  Card, CardImg, CardText, CardBody, CardLink, Button,
   CardTitle, CardSubtitle,
 } from 'reactstrap';
 
@@ -11,20 +11,18 @@ class TechnologyCard extends React.Component {
     const { project } = this.props;
     return (
       <div >
-        <Col sm="6">
-          <Card>
-          <CardBody>
-            <CardTitle>{project.title}</CardTitle>
-            <CardSubtitle>{project.techologiesUsed}</CardSubtitle>
-          </CardBody>
-          <img width="100%" src={project.screenshot} alt="Card project cap" />
-          <CardBody>
-            <CardText>{project.description}</CardText>
-            <CardLink href="#">{project.url}</CardLink>
-            <CardLink href="#">{project.github}</CardLink>
-          </CardBody>
+        <Card>
+        <CardBody>
+          <CardTitle>{project.title}</CardTitle>
+          <CardSubtitle>{project.techologiesUsed}</CardSubtitle>
+        </CardBody>
+        <img className="ProjectImage" width="100%" src={project.screenshot} alt="Card project cap" />
+        <CardBody>
+          <CardText className="ProjectDescription">{project.description}</CardText>
+          <CardLink href={project.url}>Visit Site</CardLink>
+          <CardLink href={project.github}>Visit Code</CardLink>
+        </CardBody>
         </Card>
-      </Col>
     </div>
     );
   }
