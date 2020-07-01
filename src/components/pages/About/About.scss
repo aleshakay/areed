@@ -1,0 +1,29 @@
+.About{
+  height: 100%;
+  background-color: grey;
+  min-height: 100vh;
+}
+
+.aboutUsCardTitles{
+  font-family: fantasy;
+}
+
+.card-header {
+  height: 150px;
+  width: 100%;
+  padding: 15px;
+  width:100%;
+  background-size:cover;
+  color:#fff;
+}
+
+.areedImg{
+  flex: 1;
+  width: 50;
+  height: 50;
+}
+
+.body-content{
+  margin-left: 15%;
+  margin-right:15%;
+}

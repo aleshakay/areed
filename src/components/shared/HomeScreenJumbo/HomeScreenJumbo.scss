@@ -1,0 +1,25 @@
+ .coverbtn {
+  margin: 4px;
+  background-color:whitesmoke ;
+  font-size: 1rem;
+}
+
+.jumbotron{
+  background-image: url("../../../assets/coffeecup.jpg");
+  background-size: cover;
+  max-height: 100&;
+  height: auto;
+
+  .container-fluid{
+    height: 100vh;
+  }
+}
+.lead{
+  font-size: 2rem;
+}
+
+.display-1{
+  display: inline;
+  padding-right: 0;
+  font-family: fantasy;
+}
