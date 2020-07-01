@@ -20,7 +20,9 @@ class HomeScreenJumbo extends React.Component {
             <p className="lead">Full Stack Software Developer</p>
             <Button className="contactbtn" outline color="secondary" size="md" onClick={this.github}>GitHub</Button>
             <Button className="contactbtn" outline color="secondary" size="md" onClick={this.linkedId}>LinkedIn</Button>
-            <Button className="coverbtn" outline color="secondary" size="md">Email</Button>
+            <Button className="contactbtn" outline color="secondary" size="md">
+              <a href="mailto:aleshak83@gmail.com">Email</a>
+            </Button>
             <Button className="coverbtn" outline color="secondary" size="md">Blog</Button>
           </Container>
         </Jumbotron>
