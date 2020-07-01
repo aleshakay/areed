@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-  CardGroup,
+  Container, Row,
 } from 'reactstrap';
-import PropTypes from 'prop-types';
+
 
 import ProjectCard from '../../shared/ProjectCard/ProjectCard';
 import projectData from '../../../helpers/data/ProjectData';
@@ -13,11 +13,6 @@ class Porfolio extends React.Component {
   state = {
     projects: [],
   }
-
-  static propTypes = {
-    Container: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  }
-
 
   getProjects = () => {
     projectData.getProjects()
@@ -34,9 +29,11 @@ class Porfolio extends React.Component {
     return (
       <div className="Porfolio">
       <h1 className="porfolioPageTitle">It's Just the Beginning...</h1>
-        <CardGroup>
+      <Container>
+      <Row className="ProjectRow">
           {projects.map((project) => <ProjectCard key={project.id} project={project} />)}
-        </CardGroup>
+      </Row>
+        </Container>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody, CardLink, Button,
+  Card, CardImg, CardText, CardBody, CardLink, Button, Col,
   CardTitle, CardSubtitle,
 } from 'reactstrap';
 
@@ -11,7 +11,8 @@ class TechnologyCard extends React.Component {
     const { project } = this.props;
     return (
       <div >
-        <Card>
+      <Col xs="4">
+        <Card className="ProjectCards">
         <CardBody>
           <CardTitle>{project.title}</CardTitle>
           <CardSubtitle>{project.techologiesUsed}</CardSubtitle>
@@ -23,6 +24,7 @@ class TechnologyCard extends React.Component {
           <CardLink href={project.github}>Visit Code</CardLink>
         </CardBody>
         </Card>
+        </Col>
     </div>
     );
   }
