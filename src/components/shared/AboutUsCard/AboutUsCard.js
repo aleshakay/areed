@@ -18,8 +18,8 @@ class AboutUsCard extends React.Component {
         text2={'I stilled contained the love that technology afforded me with seeing ideas come to fruition before my eyes and under my fingers tips.\
         I have continued to look for ways to nuture that love over the past couple years. Last summer, that search lead me to\
         enroll in a JumpStart program at Nashville Software School where I began the process of nuturing that love for technical. \
-        I found a community of peers that shared that same love.  Months later I enrolled in the Full Stack Web Development Bootcamp and here I am. I am growing and learning skills that as a young girl I dreamed about.  I am not where I want to be but I am enjoying my journey to that place.'}
-        text3={'Outside of technology, I enjoy family time and photography. I take a great black and white photo, if I might so say myself. You can also find me doing any of the following equally important hobbies.'} />
+        I found a community of peers that shared that same love.  Months later, I enrolled in the Full Stack Web Development Bootcamp and here I am. I am growing and learning skills that as a young girl I dreamed about.  I am not where I want to be but I am enjoying my journey to that place.'}
+        text3={'Outside of technology, I enjoy family time and photography. I take a great black and white photo, if I might so say myself. You can also find me doing any of the following equally important hobbies. My Hobbies... Crafting , Traveling or Volunteering'} />
       </article>
     );
   }
