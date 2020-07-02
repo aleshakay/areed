@@ -15,7 +15,7 @@ class AboutUsCard extends React.Component {
         text1={' My passion for technology started as an adoloscent when I received my first computer. I have been tinkering with technology in various forms since that day.\
          That passion led me to enroll at Middle Tennessee State University, where I graduated with a BA in Computer Information Systems. I did not immediately start my career in technology.\
           I worked several jobs to take care of my family. In 2013, I received my first job in the technology field.  The next few years were a bit harder than I expected, however, I was determined.'}
-        text2={'I stilled contained the love that technology afforded me with seeing ideas come to fruition before my eyes and under my fingers tips.\
+        text2={'I still embody the love for technology through seeing ideas come to fruition before my eyes and under my fingers tips.\
         I have continued to look for ways to nuture that love over the past couple years. Last summer, that search lead me to\
         enroll in a JumpStart program at Nashville Software School where I began the process of nuturing that love for technical. \
         I found a community of peers that shared that same love.  Months later, I enrolled in the Full Stack Web Development Bootcamp and here I am. I am growing and learning skills that as a young girl I dreamed about.  I am not where I want to be but I am enjoying my journey to that place.'}
