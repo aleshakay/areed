@@ -21,7 +21,7 @@ class TechnologyCard extends React.Component {
         <CardBody>
           <CardText className="ProjectDescription">{project.description}</CardText>
           <CardLink href={project.url}>Visit Site</CardLink>
-          <CardLink href={project.github}>Visit Code</CardLink>
+          <CardLink href={project.githubUrl}>Visit Code</CardLink>
         </CardBody>
         </Card>
         </Col>
