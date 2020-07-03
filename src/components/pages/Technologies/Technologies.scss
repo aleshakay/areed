@@ -1,3 +1,20 @@
 .Technologies{
-  background-color: grey;
+  background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    border: outset;
+    padding-top: 15%;
+    padding-bottom: 40%;
+}
+
+
+.TechnologyListGroup{
+  border-style: inset;
+  border-width: thick;
+  background-color: lightgrey;
+  padding-top: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
 }

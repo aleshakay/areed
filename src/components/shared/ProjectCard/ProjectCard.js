@@ -14,14 +14,14 @@ class TechnologyCard extends React.Component {
       <Col xs="4">
         <Card className="ProjectCards">
         <CardBody>
-          <CardTitle>{project.title}</CardTitle>
+          <CardTitle className="ProjectCardTitle">{project.title}</CardTitle>
           <CardSubtitle>{project.techologiesUsed}</CardSubtitle>
         </CardBody>
         <img className="ProjectImage" width="100%" src={project.screenshot} alt="Card project cap" />
         <CardBody>
           <CardText className="ProjectDescription">{project.description}</CardText>
           <CardLink href={project.url}>Visit Site</CardLink>
-          <CardLink href={project.github}>Visit Code</CardLink>
+          <CardLink href={project.githubUrl}>Visit Code</CardLink>
         </CardBody>
         </Card>
         </Col>

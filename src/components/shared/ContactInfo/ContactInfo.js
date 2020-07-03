@@ -19,7 +19,9 @@ class ContactInfo extends React.Component {
             <h1 className="contactInfoDescription">Find me at... </h1>
             <Button className="contactbtn" outline color="secondary" size="md" onClick={this.github}>GitHub</Button>
             <Button className="contactbtn" outline color="secondary" size="md" onClick={this.linkedId}>LinkedIn</Button>
-            <Button className="contactbtn" outline color="secondary" size="md" >Email</Button>
+            <Button className="contactbtn" outline color="secondary" size="md">
+              <a href="mailto:aleshak83@gmail.com">Email</a>
+            </Button>
             <Button className="contactbtn" outline color="secondary" size="md">Blog</Button>
             <Button className="contactbtn" outline color="secondary" size="md">Resume</Button>
           </Container>

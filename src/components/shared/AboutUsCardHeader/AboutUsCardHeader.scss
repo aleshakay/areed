@@ -3,8 +3,13 @@
   width: 100%;
   padding: 15px;
   width:100%;
-  background-size:cover;
   color:#fff;
+}
+
+url {
+  margin-right: 20%;
+  height: -webkit-fill-available;
+  object-fit: cover;
 }
 
 .card-header--title {
