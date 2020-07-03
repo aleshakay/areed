@@ -26,9 +26,9 @@ class Technologies extends React.Component {
     return (
       <div className="Technologies">
         <Container>
-          <p>I have worked with the following technologies through the bootcamp or in my co</p>
-          <Row>
-            <ul className="TechnologyListGroup" horizontal>
+          <Row className="TechnologyListGroup">
+          <h1>Here are a few technologies I've been working with recently: </h1>
+            <ul horizontal>
               {technologies.map((technology) => <TechnologyList key={technology.id} technology={technology} />)}
             </ul>
           </Row>
