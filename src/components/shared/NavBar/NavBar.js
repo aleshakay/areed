@@ -11,17 +11,17 @@ import { Link } from 'react-router-dom';
 import './NavBar.scss';
 
 const NavBar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
       <Navbar className="navBarRow" color="light" light expand="md">
         <NavbarBrand href="/">Alesha</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" myNavbar>
+        <NavbarToggler onClick={toggleNavbar} />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav className="ml-auto" myNavbar navbar>
             <NavItem>
               <Link className="pageLink" NavLink to="About">About</Link>
             </NavItem>
